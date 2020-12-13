@@ -1,8 +1,39 @@
 <?php
 /**
  * Plugin Name: WP Booster: Color Blocks
+ * Description: Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed test.
  * Version: 1.1
- */
+ * Author: seojacky 
+ * Author URI: https://t.me/big_jacky 
+ * GitHub Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
+ * Text Domain: wpbooster-color-blocks
+ * Domain Path: /languages
+*/
+/* Exit if accessed directly */
+if ( ! defined( 'ABSPATH' ) ) {
+	return;
+}
+
+define('WPBCB_FILE', __FILE__); // url of the file directory
+define('WPBCB_DIR', __DIR__); // url plugins folder
+/*
+****************************************************************
+	Plugin settings links
+****************************************************************
+*/
+add_filter('plugin_action_links_'.plugin_basename(WPBCB_FILE), 'tlap_plugin_page_settings_link');
+function tlap_plugin_page_settings_link( $links ) {
+	/*$links[] = '<a href="' .
+		admin_url( 'admin.php?page='. basename(dirname(WPBCB_FILE))) .
+		'">' . __('Settings') . '</a>';*/
+	$links[] = '<a href="https://t.me/big_jacky">' . __('Author') . '</a>';
+	return $links;
+}
+
+
+
+
+
 add_action(
 	'after_setup_theme',
 	function() {
