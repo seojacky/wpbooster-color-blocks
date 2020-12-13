@@ -1,0 +1,87 @@
+.wpbcb-block {
+	display: block;
+    position: relative;
+    border: 0;
+    margin: 2em 0;
+    background: #f2f5f9;
+    padding: 20px 20px 20px 65px;
+    font-size: 16px;
+    font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+    border-radius: 2px;
+}
+.wpbcb-block:before {
+    content: "❭❭";
+    color: #9ca9c7;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -15px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #9ca9c7;
+    text-align: center;
+    line-height: 28px;
+    box-sizing: border-box;
+    font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+}
+.wpbcb-block--warning {
+    background: #fff4d4;
+}
+.wpbcb-block--warning:before {
+    content: "!";
+    color: #f58128;
+    border-color: #f58128;
+}
+.wpbcb-block--question {
+    background-color: #e3f1f4;
+}
+.wpbcb-block--question:before {
+    content: "?";
+    color: #3da2e0;
+    border-color: #3da2e0;
+}
+.wpbcb-block--danger {
+    background: #ffe3db;
+}
+.wpbcb-block--danger:before {
+    content: "×";
+    color: #ff6547;
+    border-color: #ff6547;
+}
+.wpbcb-block--check {
+    background-color: #def9e5;
+}
+.wpbcb-block--check:before {
+    content: "✓";
+    color: #34bc58;
+    border-color: #34bc58;
+}
+.wpbcb-block--info {
+    background: #e3f1f4;
+}
+.wpbcb-block--info:before {
+    content: "i";
+    color: #3da2e0;
+    border-color: #3da2e0;
+}
+.wpbcb-block--thumbs-up {
+    background: #def9e5;
+}
+.wpbcb-block--thumbs-up:before {
+    content: "🖒";
+    color: #34bc58;
+    border-color: #34bc58;
+    font-size: 20px;
+}
+.wpbcb-block--thumbs-down {
+    background: #ffe3db;
+}
+.wpbcb-block--thumbs-down:before {
+    content: "🖓";
+    color: #ff6547;
+    border-color: #ff6547;
+    font-size: 20px;
+}
+
