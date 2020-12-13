@@ -22,6 +22,7 @@
     height: 30px;
     border: 2px solid #9ca9c7;
     text-align: center;
+	text-indent: 0;
     line-height: 28px;
     box-sizing: border-box;
     font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
