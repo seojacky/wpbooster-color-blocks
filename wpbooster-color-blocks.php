@@ -21,8 +21,8 @@ define('WPBCB_DIR', __DIR__); // url plugins folder
 	Plugin settings links
 ****************************************************************
 */
-add_filter('plugin_action_links_'.plugin_basename(WPBCB_FILE), 'tlap_plugin_page_settings_link');
-function tlap_plugin_page_settings_link( $links ) {
+add_filter('plugin_action_links_'.plugin_basename(WPBCB_FILE), 'wpbcb_plugin_page_settings_link');
+function wpbcb_plugin_page_settings_link( $links ) {
 	/*$links[] = '<a href="' .
 		admin_url( 'admin.php?page='. basename(dirname(WPBCB_FILE))) .
 		'">' . __('Settings') . '</a>';*/
