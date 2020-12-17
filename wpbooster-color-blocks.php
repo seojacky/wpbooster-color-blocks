@@ -113,6 +113,24 @@ add_filter(
 				'classes' => 'wpbcb-block wpbcb-block--thumbs-down',
 				'wrapper' => true,
 			),
+			array(
+				'title' => 'Thumbs Up Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-up-emoji',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Thumbs Down Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-down-emoji',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Idea Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-idea-emoji',
+				'wrapper' => true,
+			),
 		);
 
 		$init_array['style_formats'] = json_encode( $style_formats );
