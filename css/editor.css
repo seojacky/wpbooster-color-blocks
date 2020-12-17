@@ -23,7 +23,8 @@
     border: 2px solid #9ca9c7;
     text-align: center;
 	text-indent: 0;
-    line-height: 28px;
+    /*line-height: 28px;*/
+	line-height: 1.5rem;
     box-sizing: border-box;
     font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
 }
@@ -85,4 +86,3 @@
     border-color: #ff6547;
     font-size: 20px;
 }
-
