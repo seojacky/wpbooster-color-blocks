@@ -1,5 +1,5 @@
 .wpbcb-block {
-	display: block;
+    display: block;
     position: relative;
     border: 0;
     margin: 2em 0;
@@ -22,9 +22,8 @@
     height: 30px;
     border: 2px solid #9ca9c7;
     text-align: center;
-	text-indent: 0;
-    /*line-height: 28px;*/
-	line-height: 1.5rem;
+    text-indent: 0;    
+    line-height: 1;
     box-sizing: border-box;
     font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
 }
