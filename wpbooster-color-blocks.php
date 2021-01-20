@@ -44,21 +44,21 @@ add_action(
 add_action(
 	'wp_enqueue_scripts',
 	function() {
-		wp_enqueue_style( 'editor', plugin_dir_url( __FILE__ ) . 'css/editor.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' ) );
+		wp_enqueue_style( 'wpbcb-editor-css', plugin_dir_url( __FILE__ ) . 'css/editor.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' ) );
 	}
 );
 
 /**
  * Добавить кнопку на панель TinyMCE.
  */
-function info_buttons($buttons) {
-	array_unshift($buttons, 'styleselect');
+function wpbcb_info_buttons($buttons) {
+	array_splice($buttons, 2, 0, 'styleselect'); // добавляем после 2го элемента
 	return $buttons;
 }
-add_filter('mce_buttons_2', 'info_buttons');
+add_filter('mce_buttons_2', 'wpbcb_info_buttons', 11);
  
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
-function my_mce_before_init_insert_formats( $init_array ) {
+add_filter( 'tiny_mce_before_init', 'wpbcb_mce_before_init_insert_formats' );
+function wpbcb_mce_before_init_insert_formats( $init_array ) {
 
 		$style_formats = array(
 			array(
