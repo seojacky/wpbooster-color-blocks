@@ -86,3 +86,31 @@
     border-color: #ff6547;
     font-size: 20px;
 }
+
+.wpbcb-block--thumbs-up-emoji {
+    background: #dff2bf;
+}
+.wpbcb-block--thumbs-up-emoji:before {
+    content: "👍";
+    color: #34bc58;
+	border-color: transparent;
+    font-size: 20px;
+}
+.wpbcb-block--thumbs-down-emoji {
+    background: #ffe3db;
+}
+.wpbcb-block--thumbs-down-emoji:before {
+    content: "👎";
+    color: #34bc58;
+	border-color: transparent;
+    font-size: 20px;
+}
+.wpbcb-block--thumbs-idea-emoji {
+    background: #bde5f8;
+}
+.wpbcb-block--thumbs-idea-emoji:before {
+    content: "💡";
+    color: #34bc58;
+	border-color: transparent;
+    font-size: 20px;
+}

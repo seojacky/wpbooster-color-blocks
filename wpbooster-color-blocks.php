@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Booster: Color Blocks
  * Description: Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed test.
- * Version: 1.1
+ * Version: 1.3
  * Author: seojacky 
  * Author URI: https://t.me/big_jacky 
  * GitHub Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
@@ -51,18 +51,14 @@ add_action(
 /**
  * Добавить кнопку на панель TinyMCE.
  */
-add_filter(
-	'mce_buttons_2',
-	function( $buttons ) {
-	array_splice($buttons, 2, 0, 'styleselect'); // добавляем после 2го элемента
-		return $buttons;
-	},
-	20
-);
-
-add_filter(
-	'tiny_mce_before_init',
-	function( $init_array ) {
+function info_buttons($buttons) {
+	array_unshift($buttons, 'styleselect');
+	return $buttons;
+}
+add_filter('mce_buttons_2', 'info_buttons');
+ 
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+function my_mce_before_init_insert_formats( $init_array ) {
 
 		$style_formats = array(
 			array(
@@ -113,10 +109,27 @@ add_filter(
 				'classes' => 'wpbcb-block wpbcb-block--thumbs-down',
 				'wrapper' => true,
 			),
+			array(
+				'title' => 'Thumbs Up Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-up-emoji',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Thumbs Down Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-down-emoji',
+				'wrapper' => true,
+			),
+			array(
+				'title' => 'Idea Emoji',
+				'block' => 'span',
+				'classes' => 'wpbcb-block wpbcb-block--thumbs-idea-emoji',
+				'wrapper' => true,
+			),
 		);
 
 		$init_array['style_formats'] = json_encode( $style_formats );
 
 		return $init_array;
 	}
-);
