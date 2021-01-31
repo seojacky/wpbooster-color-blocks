@@ -15,6 +15,9 @@ Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed te
 
 == Changelog ==
 = 1.4 =
+* Исправил баги
+
+= 1.4 =
 * Добавил отложенную загрузку стилей плагина (PageSpeed)
 
 = 1.3 =
