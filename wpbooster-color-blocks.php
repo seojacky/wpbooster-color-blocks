@@ -29,7 +29,21 @@ function wpbcb_plugin_page_settings_link( $links ) {
 	$links[] = '<a href="https://t.me/big_jacky">' . __('Author') . '</a>';
 	return $links;
 }
+/* Plugin extra links */
+add_filter('plugin_row_meta', function ($links, $file)
+    {
+        // if not current plugin, return default links
+        if (plugin_basename(WPBCB_FILE) !== $file)
+        {
+            return $links;
+        }
 
+        $meta_links = array(
+		'<a href="https://wp-booster.com/wp-booster-color-block/" target="_blank">' . __('FAQ', 'wpbooster-color-blocks') . '</a>',
+		);
+
+        return array_merge($links, $meta_links);
+    }, 10, 2);
 
 
 
