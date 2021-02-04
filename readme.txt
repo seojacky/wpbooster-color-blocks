@@ -9,7 +9,8 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-WP Booster: Color Blocks - Gorgeous colored blocks for your posts. Does not degrade PageSpeed ​​scores.
+WP Booster: Color Blocks - Gorgeous colored blocks for your posts. Does not degrade PageSpeed scores.
+WP Booster: Color Blocks - Великолепные цветные блоки для ваших сообщений. Не снижает оценки PageSpeed.
 
 
 
