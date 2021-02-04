@@ -14,7 +14,7 @@ Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed te
 
 
 == Changelog ==
-= 1.4 =
+= 1.5 =
 * Исправил баги
 
 = 1.4 =
