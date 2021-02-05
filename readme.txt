@@ -15,6 +15,9 @@ WP Booster: True Color Blocks - Великолепные цветные блок
 
 
 == Changelog ==
+= 1.6 =
+* Rename plugin in "WP Booster: True Color Blocks"
+
 = 1.5 =
 * Исправил баги
 
