@@ -1,4 +1,4 @@
-=== WP Booster: Color Blocks ===
+=== WP Booster: True Color Blocks ===
 Contributors: seojacky
 Tags: pagespeed, lighthouse, perfomance, optimaze, optimization, lazy load
 Requires at least: 5.0
@@ -9,8 +9,8 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-WP Booster: Color Blocks - Gorgeous colored blocks for your posts. Does not degrade PageSpeed scores.
-WP Booster: Color Blocks - Великолепные цветные блоки для ваших сообщений. Не снижает оценки PageSpeed. Имеет семантически нейтральную вёрстку.
+WP Booster: True Color Blocks - Gorgeous colored blocks for your posts. Does not degrade PageSpeed scores.
+WP Booster: True Color Blocks - Великолепные цветные блоки для ваших сообщений. Не снижает оценки PageSpeed. Имеет семантически нейтральную вёрстку.
 
 
 
