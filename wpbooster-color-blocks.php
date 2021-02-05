@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WP Booster: Color Blocks
+ * Plugin Name: WP Booster: True Color Blocks
  * Description: Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed test.
  * Version: 1.5
  * Author: seojacky 
