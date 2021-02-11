@@ -12,9 +12,16 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 WP Booster: True Color Blocks - Gorgeous colored blocks for your posts. Does not degrade PageSpeed scores.
 WP Booster: True Color Blocks - Великолепные цветные блоки для ваших сообщений. Не снижает оценки PageSpeed. Имеет семантически нейтральную вёрстку.
 
-
+== Frequently Asked Questions ==
+= Где находится кнопка со стилями? = 
+Стили к блокам добавляются с помощью кнопки Formats (Форматы). Смотрите скриншот https://i.imgur.com/VIxI4eK.jpg
+= Почему не появилась кнопка со стилями? = 
+Скорее всего у Вас установлен плагин типа TinyMCE Advanced, который добавляет кнопки на панель визуального редактора. Проверьте настройки такого плагина и, если необходимо, добавьте кнопку Formats (Форматы) на панель.
 
 == Changelog ==
+= 1.7 =
+* Исправил баги
+
 = 1.6 =
 * Rename plugin in "WP Booster: True Color Blocks"
 
