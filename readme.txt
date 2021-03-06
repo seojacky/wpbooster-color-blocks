@@ -26,6 +26,13 @@ wpbcb-block--warning:before {
     background-size: cover;    
 }
 ```
+= Почему иконка в блоке смещена вверх (вниз)? = 
+Потому что стили вашего шаблона накладываются на стили плагина. Исправить это можно примерно так:
+```
+.wpbcb-block:before {
+    line-height: 1;
+}
+```
 
 
 == Changelog ==
