@@ -31,6 +31,7 @@ wpbcb-block--warning:before {
 == Changelog ==
 = 1.8 =
 * Исправил стили плагина
+* Обновил FAQ
 
 = 1.7 =
 * Исправил баги
