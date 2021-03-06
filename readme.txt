@@ -20,10 +20,14 @@ WP Booster: True Color Blocks - Великолепные цветные блок
 = Как заменить иконку в блоке? = 
 Пока единственный способ это корректировка CSS стилей. Добавьте в свой файл стилей (например для блока "Внимание") что-то типа:
  <code>
-wpbcb-block--warning:before {    
+wpbcb-block--warning:before {
+
     content: "";
+    
     background: url(https://i.imgur.com/MJekAr4.gif) no-repeat center 50%;
+    
     background-size: cover;
+    
 }
 </code>
 
