@@ -19,17 +19,13 @@ WP Booster: True Color Blocks - Великолепные цветные блок
 Скорее всего у Вас установлен плагин типа TinyMCE Advanced, который добавляет кнопки на панель визуального редактора. Проверьте настройки такого плагина и, если необходимо, добавьте кнопку Formats (Форматы) на панель.
 = Как заменить иконку в блоке? = 
 Пока единственный способ это корректировка CSS стилей. Добавьте в свой файл стилей (например для блока "Внимание") что-то типа:
- <code>
+```
 wpbcb-block--warning:before {
-
-    content: "";
-    
-    background: url(https://i.imgur.com/MJekAr4.gif) no-repeat center 50%;
-    
-    background-size: cover;
-    
+    content: "";    
+    background: url(https://i.imgur.com/MJekAr4.gif) no-repeat center 50%;    
+    background-size: cover;    
 }
-</code>
+```
 
 
 == Changelog ==
