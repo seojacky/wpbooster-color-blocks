@@ -5,6 +5,7 @@
  * Version: 1.9.1
  * Author: seojacky 
  * Author URI: https://t.me/big_jacky 
+ * Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
  * GitHub Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
  * Text Domain: wpbooster-color-blocks
  * Domain Path: /languages
