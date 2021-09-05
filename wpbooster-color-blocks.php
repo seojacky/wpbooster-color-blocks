@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Booster: True Color Blocks
  * Description: Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed test.
- * Version: 1.9
+ * Version: 1.9.1
  * Author: seojacky 
  * Author URI: https://t.me/big_jacky 
  * GitHub Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
@@ -58,7 +58,7 @@ add_action(
 add_action(
 	'wp_enqueue_scripts',
 	function() {
-		wp_enqueue_style( 'wpbcb-editor-css', plugin_dir_url( __FILE__ ) . 'css/editor.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' ) );
+		wp_enqueue_style( 'wpbcb-editor', plugin_dir_url( __FILE__ ) . 'css/editor.css', [], filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' ) );
 	}
 );
 
@@ -153,7 +153,7 @@ function wpbcb_mce_before_init_insert_formats( $init_array ) {
 add_filter( 'style_loader_tag', 'wpb_color_blocks_change_attribute', 10, 2 );
 function wpb_color_blocks_change_attribute($link, $handle) {	
 
-	  if( $handle === 'wpbcb-editor-css' ) {
+	  if( $handle === 'wpbcb-editor' ) {
         $link = str_replace( '\'all\'', '\'print\'', $link );
 		$link = str_replace( '/>', 'onload="this.media=\'all\'" />', $link );
     }
