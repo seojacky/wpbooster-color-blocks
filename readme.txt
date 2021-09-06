@@ -36,6 +36,9 @@ wpbcb-block--warning:before {
 
 
 == Changelog ==
+= 1.9.2 =
+* Minify css
+
 = 1.9.1 =
 * Исправил отложенную загрузку стилей плагина (PageSpeed)
 
