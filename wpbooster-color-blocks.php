@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Booster: True Color Blocks
  * Description: Gorgeous colored blocks for your posts. Do not reduce scores in the PageSpeed test.
- * Version: 1.9.1
+ * Version: 1.9.2
  * Author: seojacky 
  * Author URI: https://t.me/big_jacky 
  * Plugin URI: https://github.com/seojacky/wpbooster-color-blocks
